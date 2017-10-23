@@ -23,7 +23,6 @@ body {
   body [class*="col-"] {
     padding: 0px; }
   body .container-fluid {
-    min-height: 0;
     padding: 0;
     margin: 0px;
     background-color: crimson; }
@@ -158,11 +157,11 @@ body {
       border-color: transparent red transparent transparent;
       position: absolute;
       border-style: solid;
-      border-width: 10vh 99.2vw 0 0;
+      border-width: 10vh 100vw 0 0;
       border-color: whitesmoke transparent transparent transparent;
       margin-top: -2px; }
     body header div {
-      width: 99.2vw;
+      width: 100vw;
       height: 90vh;
       background-color: whitesmoke;
       display: flex;
@@ -196,37 +195,10 @@ body {
         font-size: 2.7em;
         margin-top: 0;
         color: #ea694D; }
-      body header div #buttonbounce {
-        -webkit-animation-name: zoomInDown;
-        animation-name: zoomInDown;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-delay: 0.3s;
-        animation-delay: 1s;
-        width: 75px;
-        height: 75px;
-        border: 5px solid #222;
-        top: auto;
-        bottom: 15%;
-        border-radius: 100%;
-        cursor: pointer;
-        animation-name: bounce;
-        animation-duration: 2s;
-        animation-iteration-count: infinite; }
-@keyframes bounce {
-  0%,
-                    100% {
-    width: 75px;
-    height: 75px; }
-  20%,
-                    40% {
-    width: 90px;
-    height: 90px; } }
   body .caca {
-    background-color: red;
-    height: 50vh; }
+    width: 100vh;
+    height: 100vh;
+    background-color: red; }
 
 /* ANIMATION HEADER */
 @-webkit-keyframes zoomInDown {
