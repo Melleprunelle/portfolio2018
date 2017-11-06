@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Lovelo';
-  src: url("../font/Lovelo Line Light.otf"); }
+  src: url("../../font/Lovelo Line Light.otf"); }
 @font-face {
   font-family: 'Lovelo-black';
-  src: url("../font/Lovelo Line Bold.otf"); }
+  src: url("../../font/Lovelo Line Bold.otf"); }
 /* ======================== */
 /* MIXING */
 /* ======================== */
@@ -23,6 +23,7 @@ body {
   body [class*="col-"] {
     padding: 0px; }
   body .container-fluid {
+    min-height: 0;
     padding: 0;
     margin: 0px;
     background-color: crimson; }
@@ -142,34 +143,22 @@ body {
   body header {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
     background-color: #222;
-    position: relative; }
-    body header:before {
-      content: "";
-      bottom: 0;
-      border-style: solid;
-      border-width: 10px 15px 10px 0;
-      border-color: transparent red transparent transparent;
-      position: absolute;
-      border-style: solid;
-      border-width: 10vh 100vw 0 0;
-      border-color: whitesmoke transparent transparent transparent;
+    background-image: url(../img/asfalt.png);
+    background-size: auto; }
+    body header img {
+      width: 75%;
       margin-top: -2px; }
     body header div {
-      width: 100vw;
-      height: 90vh;
-      background-color: whitesmoke;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0; }
+      width: 100%;
+      height: 650px;
+      background-color: #f9f9f9ff;
+      background-image: url(../img/header.svg);
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: 100% 0%;
+      text-align: left; }
       body header div h1 {
         -webkit-animation-name: zoomInDown;
         animation-name: zoomInDown;
@@ -180,8 +169,9 @@ body {
         -webkit-animation-delay: 0.3s;
         animation-delay: 1s;
         font-family: "Lovelo-black";
-        font-size: 12em;
-        text-align: center; }
+        font-size: 10vw;
+        text-align: left;
+        padding: 16vh 6vw 0 6vw; }
       body header div h2 {
         -webkit-animation-name: zoomInDown;
         animation-name: zoomInDown;
@@ -191,41 +181,12 @@ body {
         animation-fill-mode: both;
         -webkit-animation-delay: 0.3s;
         animation-delay: 1s;
-        text-align: center;
-        font-size: 2.7em;
+        font-size: 2.7vw;
         margin-top: 0;
-        color: #ea694D; }
+        color: #ea694D;
+        padding-left: 8vw; }
   body .caca {
-    width: 100vh;
-    height: 100vh;
-    background-color: red; }
-
-/* ANIMATION HEADER */
-@-webkit-keyframes zoomInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
-@keyframes zoomInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+    background-color: red;
+    height: 50vh; }
 
 /*# sourceMappingURL=style.css.map */
